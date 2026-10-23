@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Angular / Node 本地生成文件
+node_modules/
+dist/
+coverage/
+.angular/
+*.log
+
+# 本地环境和凭据
+.env
+.env.*
+!.env.example
+!.env.sample
+.aws/
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Terraform 本地文件（后续基础设施练习）
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+*.tfplan
+*.plan
+tfplan
+tfplan.*
+.terraform.tfstate.lock.info
+crash.log
+crash.*.log
+
+# 不忽略 package-lock.json 和 .terraform.lock.hcl
